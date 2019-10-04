@@ -2,7 +2,7 @@
 
 const Stack = require('./stack');
 
-const stackHelpers=require('./stackHelpers');
+const stackHelpers = require('./stackHelpers');
 
 function makeStarTrek() {
   const starTrek = new Stack();
