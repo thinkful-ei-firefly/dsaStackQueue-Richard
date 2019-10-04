@@ -1,4 +1,8 @@
+'use strict';
+
 const Stack = require('./stack');
+
+const stackHelpers=require('./stackHelpers');
 
 function makeStarTrek() {
   const starTrek = new Stack();
@@ -7,13 +11,9 @@ function makeStarTrek() {
   return starTrek;
 }
 
-function display(stack) {
-  let curr = stack.top;
-  while (curr !== null) {
-    console.log(curr.data);
-    curr = curr.next;
-  }
-}
-
 const trek = makeStarTrek();
-display(trek);
+
+trek.pop();
+trek.pop();
+
+stackHelpers().displayAll(trek);
