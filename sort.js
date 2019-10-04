@@ -10,19 +10,7 @@ function sortStack(stackA) {
     let temp = stackA.pop();
     let curr = stackA.top;
     while(curr !== null) {
-        //compare temp and curr
-        if(temp < curr) {
-            //push curr into tempStack
-
-        }
-      //pop curr to temp
-      //if temp > curr 
-      //pop off stackA push into tempStack
-      //get new curr
-      //end case when curr is null
-    }
-
-  
+        
     return stackA;
 }
 
@@ -32,7 +20,7 @@ function makeDisorder(items) {
     return stack;
 }
 
-const items = [1, 2, 10, 3, 5];
+const items = [1, 2, 10, 11, 3, 5];
 const disorder = makeDisorder(items);
 stackHelpers.display(disorder);
 stackHelpers.display(sortStack(disorder));
@@ -53,7 +41,7 @@ A               B
 
 
 null
-
+while curr !== null
 //check Max against currA
 //if currA is smaller           //if currA is larger          
 //check currA against currB     //Max push to B
@@ -62,6 +50,9 @@ null
 //if currA smaller              //if currA is larger           
 //currA in a Min                //pop currA push to B
 
+//if Min < currB
+//pop currB push to A
+//repeat until //min > currB
 
 //go backwards until currA > currB
 //go forwards again
