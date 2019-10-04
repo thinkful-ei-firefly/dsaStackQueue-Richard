@@ -13,7 +13,7 @@ function makeStarTrek() {
 
 const trek = makeStarTrek();
 
-trek.pop();
-trek.pop();
+// trek.pop();
+// trek.pop();
 
 stackHelpers().displayAll(trek);
